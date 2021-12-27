@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  box-sizing: content-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #dedede;
+}
+
+li button:first-child {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #ff5252;
+  color: white;
+}
+
+button:disabled {
+  background-color: #dedede;
+}
+
+.error-msg {
+  width: 250px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #fbb7b7;
+  color: #6f0000;
+  font-weight: bold;
+}
+
+.change-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.loading {
+  background-image: url(./img/spinner.png);
+  width: 35px;
+  height: 35px;
+  animation: isloading 1s linear infinite;
+}
+
+@keyframes isloading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
